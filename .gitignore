@@ -1,0 +1,19 @@
+# Server installations and database engine data
+mysql.xampp/
+*.xampp/
+
+# Browser scrapes and saved web pages
+localhost _ 127.0.0.1 _ *
+*.html_files/
+
+# Temporary and log files
+*.log
+*.tmp
+tempCodeRunnerFile.*
+
+# IDE and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
