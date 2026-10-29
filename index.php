@@ -5,15 +5,15 @@ include 'config.php';
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Student Portal - PCCOER Notice Board</title>
+  <title>Student Portal - College Digital Notice Board</title>
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <header class="main-header">
-    <img src="logo.png" alt="PCCOER Logo" class="logo">
-    <h1>Pimpri Chinchwad College of Engineering and Research, Ravet - Computer Department</h1>
+    <img src="logo.png" alt="College Logo" class="logo">
+    <h1>College Digital Notice Board - Computer Department</h1>
     <button id="dark-mode-toggle" title="Toggle dark mode"></button>
   </header>
 
@@ -178,7 +178,7 @@ include 'config.php';
   </main>
 
   <footer class="main-footer">
-    <p>© 2025 PCCOER - All Rights Reserved</p>
+    <p>© 2025 College Digital Notice Board - All Rights Reserved</p>
   </footer>
 
   <button id="back-to-top-btn" title="Go to top">▲</button>

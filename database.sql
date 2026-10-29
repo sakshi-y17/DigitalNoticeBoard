@@ -1,4 +1,4 @@
--- PCCOER Digital Notice Board Database Schema
+-- College Digital Notice Board Database Schema
 -- Database: digital_notice_board
 
 CREATE DATABASE IF NOT EXISTS `digital_notice_board` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

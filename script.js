@@ -1,5 +1,5 @@
 /*
- * PCCOER Notice Board - Combined Logic
+ * College Digital Notice Board - Combined Logic
  */
 
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,6 +1,6 @@
-# PCCOER Digital Notice Board
+# College Digital Notice Board
 
-A web-based digital notice board application developed for the Department of Computer Engineering at **Pimpri Chinchwad College of Engineering and Research (PCCOER), Ravet**.
+A modern web-based digital notice board application for campus announcements and departmental communications.
 
 The platform enables students to view announcements in real time and provides administrators with a dedicated management portal.
 
@@ -100,8 +100,3 @@ digital_notice_board/
 ├── .gitignore             # Git ignored files & directories
 └── docs/                  # Presentation slides and project documentation
 ```
-
----
-
-## 📄 License
-Academic & Internal College Use - PCCOER Computer Engineering Department.
