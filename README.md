@@ -96,6 +96,5 @@ digital_notice_board/
 ├── script.js              # Live search and dynamic client logic
 ├── darkmode.js            # Dark mode state manager
 ├── .htaccess              # Apache URL rewriting rules
-├── .gitignore             # Git ignored files & directories
-└── docs/                  # Presentation slides and project documentation
+└── .gitignore             # Git ignored files & directories
 ```
