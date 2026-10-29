@@ -57,25 +57,24 @@ c:\xampp\htdocs\digital_notice_board
    - This creates the `digital_notice_board` database and `notices` table with seed data.
 
 ### 4. Configuration
-Review [`config.php`](config.php) to ensure your database connection parameters match your local setup:
+Review [`config.php`](config.php) to configure your database connection parameters and define your custom administrator credentials:
 ```php
+// Database Configuration
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "digital_notice_board";
+$port = 3307;
+
+// Admin Portal Credentials
+// Configure your custom administrator credentials here
+define('ADMIN_USERNAME', 'your_username');
+define('ADMIN_PASSWORD', 'your_password');
 ```
-*(Note: If your MySQL server runs on a non-standard port like `3307`, ensure your connection string specifies the matching port).*
 
 ### 5. Accessing the Application
 - **Student Notice Portal**: `http://localhost/digital_notice_board/`
 - **Admin Login**: `http://localhost/digital_notice_board/admin_login.php` (or `/admin` if URL rewriting is enabled)
-
----
-
-## 🔐 Default Admin Credentials
-
-- **Username**: `admin`
-- **Password**: `admin123`
 
 ---
 
@@ -90,7 +89,7 @@ digital_notice_board/
 ├── api.php                # Backend CRUD request dispatcher
 ├── search.php             # Search API endpoint
 ├── admin_search.php       # Admin table search endpoint
-├── config.php             # Database credentials configuration
+├── config.php             # Database & admin credentials configuration
 ├── logout.php             # Session destruction & sign-out
 ├── database.sql           # Database schema & sample seed data
 ├── style.css              # Main application stylesheet

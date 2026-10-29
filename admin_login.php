@@ -1,22 +1,21 @@
 <?php
-session_start(); // Start the session at the very top
+session_start();
+require_once 'config.php';
+
 $error_message = "";
 
-// 1. Check if the form was submitted
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $username = $_POST['username'] ?? '';
     $password = $_POST['password'] ?? '';
 
-    // 2. Check if the username and password are correct
-    if ($username === 'admin' && $password === 'admin123') { // Your password
-        // SUCCESS!
-        $_SESSION['loggedin'] = true; // Remember the user is logged in
-        // Use absolute path for redirect
-        // *** FIX: Redirect to clean URL ***
+    $configured_user = defined('ADMIN_USERNAME') ? ADMIN_USERNAME : 'admin';
+    $configured_pass = defined('ADMIN_PASSWORD') ? ADMIN_PASSWORD : '';
+
+    if (!empty($configured_pass) && $username === $configured_user && $password === $configured_pass) {
+        $_SESSION['loggedin'] = true;
         header("Location: dashboard");
         exit;
     } else {
-        // FAILED
         $error_message = "Wrong username or password!";
     }
 }
