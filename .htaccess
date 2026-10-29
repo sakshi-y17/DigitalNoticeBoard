@@ -1,0 +1,19 @@
+RewriteEngine On
+RewriteBase /notice/
+
+# 1. Clean Login URL
+RewriteRule ^admin/?$ admin_login.php [L]
+
+# 2. Clean Dashboard URL
+RewriteRule ^dashboard/?$ admin_dashboard.php [L]
+
+# 3. Clean Logout URL
+RewriteRule ^logout/?$ logout.php [L]
+
+# 4. Clean Edit URL
+RewriteRule ^edit_notice/?$ edit_notice.php [L]
+
+# 5. Magic Rule: Removes .php from any other request
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L]
